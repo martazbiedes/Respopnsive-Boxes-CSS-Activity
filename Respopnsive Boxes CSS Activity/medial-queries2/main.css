@@ -1,0 +1,42 @@
+body {
+    background: papayawhip;
+  }* {
+    border: 1px solid teal;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%
+  }
+  .b {
+    width: 100%;
+  }
+  .c, .d, .e {
+    flex-grow: 1;
+  }
+  .f {
+    width: 100%;
+  }
+  
+  
+  @media (min-width: 600px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .a{
+      grid-column: 1/5;
+    }
+    .b{
+      grid-column: 1/4;
+    }
+    .f{
+      grid-column: 4/5;
+      grid-row: 2/4;
+    }
+  } 

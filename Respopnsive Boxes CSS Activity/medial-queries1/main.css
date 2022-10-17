@@ -1,0 +1,38 @@
+body {
+    background: blanchedalmond;
+  }
+  * {
+    border: 1px solid teal;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .a, .c{
+    flex-grow: 1;
+  }
+   .b {
+     flex-grow: 9;
+   }
+  
+   @media (min-width: 600px) {
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .a {
+        width: 100%;
+      }
+      .b {
+        flex-grow: 3;
+      }
+      .c {
+        flex-grow: 1;
+      }
+   }
